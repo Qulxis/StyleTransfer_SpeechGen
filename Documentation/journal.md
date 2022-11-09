@@ -37,3 +37,8 @@ Step 1: Detect politness
 Engineering Process:
 1. Wanted to create twitter bot that would generate tweets in the style of a specific user, but contrained to a specific subject. Original thought was to use previous fine tuning GPT2 models on twitter users and then use prompts as a way to contrain the subject of the tweet (see previous work as to why this mighth have been viable by previous metrics, ie sentiment transfer was allowed to change meaning, as long as subject was still there)
 2. After more research, I deduced firstly that I was unsatified by the previous versions of measuring meaning in style transfer (sentiment transfer changes meaning!) thus I switch to a subset of "style". 
+
+
+Sources: 
+https://www.philschmid.de/fine-tune-a-non-english-gpt-2-model-with-huggingface
+https://github.com/fuzhenxin/Style-Transfer-in-Text
