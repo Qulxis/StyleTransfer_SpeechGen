@@ -42,3 +42,9 @@ Engineering Process:
 Sources: 
 https://www.philschmid.de/fine-tune-a-non-english-gpt-2-model-with-huggingface
 https://github.com/fuzhenxin/Style-Transfer-in-Text
+
+API for stanford ConvoKit.
+https://convokit.cornell.edu/documentation/politenessStrategies.html
+https://dl.acm.org/doi/abs/10.1145/3415190
+Politness in style transfer context
+https://www.cs.cornell.edu/~cristian/Politeness_Paraphrasing_files/fine-grained-politeness-paraphrasing.pdf
