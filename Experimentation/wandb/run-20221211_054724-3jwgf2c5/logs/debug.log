@@ -1,0 +1,60 @@
+2022-12-11 05:47:24,325 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Configure stats pid to 3979
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Loading settings from /home/ecbm4040/.config/wandb/settings
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Loading settings from /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/settings
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_init.py:_log_setup():476] Logging user logs to /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221211_054724-3jwgf2c5/logs/debug.log
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_init.py:_log_setup():477] Logging internal logs to /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221211_054724-3jwgf2c5/logs/debug-internal.log
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_init.py:_jupyter_setup():426] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f3a76c22160>
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_init.py:init():516] calling init triggers
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_init.py:init():520] wandb.init called with sweep_config: {}
+config: {}
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_init.py:init():569] starting backend
+2022-12-11 05:47:24,326 INFO    MainThread:3979 [wandb_init.py:init():573] setting up manager
+2022-12-11 05:47:24,328 INFO    MainThread:3979 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-12-11 05:47:24,329 INFO    MainThread:3979 [wandb_init.py:init():580] backend started and connected
+2022-12-11 05:47:24,345 INFO    MainThread:3979 [wandb_run.py:_label_probe_notebook():1116] probe notebook
+2022-12-11 05:47:24,345 INFO    MainThread:3979 [wandb_run.py:_label_probe_notebook():1126] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-12-11 05:47:24,345 INFO    MainThread:3979 [wandb_init.py:init():658] updated telemetry
+2022-12-11 05:47:24,424 INFO    MainThread:3979 [wandb_init.py:init():694] communicating run to backend with 60 second timeout
+2022-12-11 05:47:24,634 INFO    MainThread:3979 [wandb_run.py:_on_init():2006] communicating current version
+2022-12-11 05:47:24,689 INFO    MainThread:3979 [wandb_run.py:_on_init():2010] got version response 
+2022-12-11 05:47:24,689 INFO    MainThread:3979 [wandb_init.py:init():728] starting run threads in backend
+2022-12-11 05:47:24,736 INFO    MainThread:3979 [wandb_run.py:_console_start():1986] atexit reg
+2022-12-11 05:47:24,736 INFO    MainThread:3979 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2022-12-11 05:47:24,736 INFO    MainThread:3979 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2022-12-11 05:47:24,737 INFO    MainThread:3979 [wandb_run.py:_redirect():1931] Redirects installed.
+2022-12-11 05:47:24,737 INFO    MainThread:3979 [wandb_init.py:init():765] run started, returning control to user process
+2022-12-11 05:47:24,741 INFO    MainThread:3979 [wandb_init.py:_pause_backend():389] pausing backend
+2022-12-11 05:47:24,741 INFO    MainThread:3979 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-11 05:47:25,378 INFO    MainThread:3979 [wandb_init.py:_resume_backend():398] resuming backend
+2022-12-11 05:47:35,049 INFO    MainThread:3979 [wandb_init.py:_pause_backend():389] pausing backend
+2022-12-11 05:47:35,049 INFO    MainThread:3979 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-11 05:47:35,053 INFO    MainThread:3979 [wandb_init.py:_resume_backend():398] resuming backend
+2022-12-11 05:47:49,756 INFO    MainThread:3979 [wandb_init.py:_pause_backend():389] pausing backend
+2022-12-11 05:47:49,757 INFO    MainThread:3979 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-11 05:47:49,763 INFO    MainThread:3979 [wandb_init.py:_resume_backend():398] resuming backend
+2022-12-11 05:47:51,564 INFO    MainThread:3979 [wandb_init.py:_pause_backend():389] pausing backend
+2022-12-11 05:47:51,564 INFO    MainThread:3979 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-11 05:47:51,571 INFO    MainThread:3979 [wandb_init.py:_resume_backend():398] resuming backend
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Configure stats pid to 3979
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Loading settings from /home/ecbm4040/.config/wandb/settings
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Loading settings from /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/settings
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_init.py:_log_setup():476] Logging user logs to /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221211_054751-385a1s4j/logs/debug.log
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_init.py:_log_setup():477] Logging internal logs to /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221211_054751-385a1s4j/logs/debug-internal.log
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_init.py:init():516] calling init triggers
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_init.py:init():520] wandb.init called with sweep_config: {}
+config: {}
+2022-12-11 05:47:51,607 INFO    MainThread:3979 [wandb_init.py:init():536] re-initializing run, found existing run on stack: 3jwgf2c5
+2022-12-11 05:47:51,609 INFO    MainThread:3979 [wandb_run.py:_finish():1753] finishing run qulxis/my-awesome-project/3jwgf2c5
+2022-12-11 05:47:51,609 INFO    MainThread:3979 [jupyter.py:save_history():448] not saving jupyter history
+2022-12-11 05:47:51,609 INFO    MainThread:3979 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-11 05:47:51,609 INFO    MainThread:3979 [wandb_init.py:_jupyter_teardown():408] cleaning up jupyter logic
+2022-12-11 05:47:51,610 INFO    MainThread:3979 [wandb_run.py:_atexit_cleanup():1955] got exitcode: 0
+2022-12-11 05:47:51,610 INFO    MainThread:3979 [wandb_run.py:_restore():1938] restore
+2022-12-11 05:47:51,610 INFO    MainThread:3979 [wandb_run.py:_restore():1944] restore done
+2022-12-11 05:47:55,688 INFO    MainThread:3979 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2022-12-11 05:47:55,688 INFO    MainThread:3979 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2022-12-11 05:47:55,690 INFO    MainThread:3979 [wandb_run.py:_footer_sync_info():3364] logging synced files
