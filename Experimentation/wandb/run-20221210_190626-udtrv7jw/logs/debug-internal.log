@@ -1,0 +1,43 @@
+2022-12-10 19:06:29,870 INFO    StreamThr :52872 [internal.py:wandb_internal():87] W&B internal server running at pid: 52872, started at: 2022-12-10 19:06:29.869357
+2022-12-10 19:06:29,871 DEBUG   HandlerThread:52872 [handler.py:handle_request():139] handle_request: status
+2022-12-10 19:06:29,872 DEBUG   SenderThread:52872 [sender.py:send_request():317] send_request: status
+2022-12-10 19:06:29,874 DEBUG   SenderThread:52872 [sender.py:send():303] send: header
+2022-12-10 19:06:29,874 INFO    WriterThread:52872 [datastore.py:open_for_write():75] open: c:\D_drive\Columbia 2022\NLP\REPO\StyleTransfer_SpeechGen\Experimentation\wandb\run-20221210_190626-udtrv7jw\run-udtrv7jw.wandb
+2022-12-10 19:06:29,874 DEBUG   SenderThread:52872 [sender.py:send():303] send: run
+2022-12-10 19:06:30,123 DEBUG   HandlerThread:52872 [handler.py:handle_request():139] handle_request: check_version
+2022-12-10 19:06:30,124 INFO    SenderThread:52872 [dir_watcher.py:__init__():216] watching files in: c:\D_drive\Columbia 2022\NLP\REPO\StyleTransfer_SpeechGen\Experimentation\wandb\run-20221210_190626-udtrv7jw\files
+2022-12-10 19:06:30,124 INFO    SenderThread:52872 [sender.py:_start_run_threads():928] run started: udtrv7jw with start time 1670717188.872638
+2022-12-10 19:06:30,124 DEBUG   SenderThread:52872 [sender.py:send():303] send: summary
+2022-12-10 19:06:30,125 INFO    SenderThread:52872 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-10 19:06:30,125 DEBUG   SenderThread:52872 [sender.py:send_request():317] send_request: check_version
+2022-12-10 19:06:30,212 DEBUG   HandlerThread:52872 [handler.py:handle_request():139] handle_request: run_start
+2022-12-10 19:06:30,222 DEBUG   HandlerThread:52872 [system_info.py:__init__():31] System info init
+2022-12-10 19:06:30,222 DEBUG   HandlerThread:52872 [system_info.py:__init__():46] System info init done
+2022-12-10 19:06:30,222 INFO    HandlerThread:52872 [system_monitor.py:start():150] Starting system monitor
+2022-12-10 19:06:30,222 INFO    SystemMonitor:52872 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-12-10 19:06:30,222 INFO    HandlerThread:52872 [system_monitor.py:probe():171] Collecting system info
+2022-12-10 19:06:30,234 INFO    SystemMonitor:52872 [interfaces.py:start():168] Started cpu
+2022-12-10 19:06:30,234 INFO    SystemMonitor:52872 [interfaces.py:start():168] Started disk
+2022-12-10 19:06:30,235 INFO    SystemMonitor:52872 [interfaces.py:start():168] Started gpu
+2022-12-10 19:06:30,280 INFO    SystemMonitor:52872 [interfaces.py:start():168] Started memory
+2022-12-10 19:06:30,280 DEBUG   HandlerThread:52872 [system_info.py:probe():195] Probing system
+2022-12-10 19:06:30,287 INFO    SystemMonitor:52872 [interfaces.py:start():168] Started network
+2022-12-10 19:06:30,294 DEBUG   HandlerThread:52872 [system_info.py:_probe_git():180] Probing git
+2022-12-10 19:06:30,426 DEBUG   HandlerThread:52872 [system_info.py:_probe_git():188] Probing git done
+2022-12-10 19:06:30,426 DEBUG   HandlerThread:52872 [system_info.py:probe():241] Probing system done
+2022-12-10 19:06:30,427 DEBUG   HandlerThread:52872 [system_monitor.py:probe():180] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.9.13', 'heartbeatAt': '2022-12-11T00:06:30.281968', 'startedAt': '2022-12-11T00:06:26.227624', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/Qulxis/StyleTransfer_SpeechGen.git', 'commit': '09a8f3f79c25e8695242e0e61fe017ac71ff5fd5'}, 'email': 'andrewx.qul@gmail.com', 'root': 'C:/D_drive/Columbia 2022/NLP/REPO/StyleTransfer_SpeechGen', 'host': 'Watson', 'username': 'andre', 'executable': 'c:\\Users\\andre\\AppData\\Local\\Programs\\Python\\Python39\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 1901.0, 'min': 0.0, 'max': 1901.0}, 'cpu_freq_per_core': [{'current': 1901.0, 'min': 0.0, 'max': 1901.0}], 'disk': {'total': 474.71581649780273, 'used': 104.89004135131836}, 'gpu': 'NVIDIA GeForce MX450', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX450', 'memory_total': 2147483648}], 'memory': {'total': 13.855525970458984}}
+2022-12-10 19:06:30,427 INFO    HandlerThread:52872 [system_monitor.py:probe():181] Finished collecting system info
+2022-12-10 19:06:30,427 INFO    HandlerThread:52872 [system_monitor.py:probe():184] Publishing system info
+2022-12-10 19:06:30,427 DEBUG   HandlerThread:52872 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-12-10 19:06:30,430 DEBUG   HandlerThread:52872 [system_info.py:_save_pip():67] Saving pip packages done
+2022-12-10 19:06:30,434 INFO    HandlerThread:52872 [system_monitor.py:probe():186] Finished publishing system info
+2022-12-10 19:06:30,434 DEBUG   SenderThread:52872 [sender.py:send():303] send: files
+2022-12-10 19:06:30,436 INFO    SenderThread:52872 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-12-10 19:06:30,446 DEBUG   HandlerThread:52872 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-10 19:06:30,446 DEBUG   SenderThread:52872 [sender.py:send_request():317] send_request: stop_status
+2022-12-10 19:06:30,568 DEBUG   SenderThread:52872 [sender.py:send():303] send: telemetry
+2022-12-10 19:06:30,821 INFO    Thread-40 :52872 [upload_job.py:push():143] Uploaded file C:\Users\andre\AppData\Local\Temp\tmp1vlo6u7uwandb\z55sdkbp-wandb-metadata.json
+2022-12-10 19:06:31,127 INFO    Thread-35 :52872 [dir_watcher.py:_on_file_created():275] file/dir created: c:\D_drive\Columbia 2022\NLP\REPO\StyleTransfer_SpeechGen\Experimentation\wandb\run-20221210_190626-udtrv7jw\files\requirements.txt
+2022-12-10 19:06:31,127 INFO    Thread-35 :52872 [dir_watcher.py:_on_file_created():275] file/dir created: c:\D_drive\Columbia 2022\NLP\REPO\StyleTransfer_SpeechGen\Experimentation\wandb\run-20221210_190626-udtrv7jw\files\wandb-summary.json
+2022-12-10 19:06:31,128 INFO    Thread-35 :52872 [dir_watcher.py:_on_file_created():275] file/dir created: c:\D_drive\Columbia 2022\NLP\REPO\StyleTransfer_SpeechGen\Experimentation\wandb\run-20221210_190626-udtrv7jw\files\wandb-metadata.json
+2022-12-10 19:06:31,128 INFO    Thread-35 :52872 [dir_watcher.py:_on_file_created():275] file/dir created: c:\D_drive\Columbia 2022\NLP\REPO\StyleTransfer_SpeechGen\Experimentation\wandb\run-20221210_190626-udtrv7jw\files\output.log
