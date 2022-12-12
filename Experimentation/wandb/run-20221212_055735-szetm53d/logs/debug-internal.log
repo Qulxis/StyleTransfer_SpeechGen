@@ -1,0 +1,1011 @@
+2022-12-12 05:57:35,643 INFO    StreamThr :3838 [internal.py:wandb_internal():90] W&B internal server running at pid: 3838, started at: 2022-12-12 05:57:35.643104
+2022-12-12 05:57:35,670 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: status
+2022-12-12 05:57:35,670 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: status
+2022-12-12 05:57:35,722 DEBUG   SenderThread:3838 [sender.py:send():303] send: header
+2022-12-12 05:57:35,726 INFO    WriterThread:3838 [datastore.py:open_for_write():75] open: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/run-szetm53d.wandb
+2022-12-12 05:57:35,768 DEBUG   SenderThread:3838 [sender.py:send():303] send: run
+2022-12-12 05:57:35,990 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: check_version
+2022-12-12 05:57:36,022 INFO    SenderThread:3838 [dir_watcher.py:__init__():216] watching files in: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files
+2022-12-12 05:57:36,022 INFO    SenderThread:3838 [sender.py:_start_run_threads():931] run started: szetm53d with start time 1670824655.654771
+2022-12-12 05:57:36,022 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:57:36,022 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:57:36,023 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: check_version
+2022-12-12 05:57:36,134 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: run_start
+2022-12-12 05:57:36,139 DEBUG   HandlerThread:3838 [system_info.py:__init__():31] System info init
+2022-12-12 05:57:36,139 DEBUG   HandlerThread:3838 [system_info.py:__init__():46] System info init done
+2022-12-12 05:57:36,139 INFO    HandlerThread:3838 [system_monitor.py:start():150] Starting system monitor
+2022-12-12 05:57:36,142 INFO    SystemMonitor:3838 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-12-12 05:57:36,146 INFO    HandlerThread:3838 [system_monitor.py:probe():171] Collecting system info
+2022-12-12 05:57:36,154 INFO    SystemMonitor:3838 [interfaces.py:start():168] Started cpu
+2022-12-12 05:57:36,158 DEBUG   HandlerThread:3838 [system_info.py:probe():195] Probing system
+2022-12-12 05:57:36,159 DEBUG   HandlerThread:3838 [system_info.py:_probe_git():180] Probing git
+2022-12-12 05:57:36,170 INFO    SystemMonitor:3838 [interfaces.py:start():168] Started disk
+2022-12-12 05:57:36,182 INFO    SystemMonitor:3838 [interfaces.py:start():168] Started gpu
+2022-12-12 05:57:36,194 INFO    SystemMonitor:3838 [interfaces.py:start():168] Started memory
+2022-12-12 05:57:36,206 INFO    SystemMonitor:3838 [interfaces.py:start():168] Started network
+2022-12-12 05:57:36,223 DEBUG   HandlerThread:3838 [system_info.py:_probe_git():188] Probing git done
+2022-12-12 05:57:36,223 DEBUG   HandlerThread:3838 [system_info.py:probe():241] Probing system done
+2022-12-12 05:57:36,223 DEBUG   HandlerThread:3838 [system_monitor.py:probe():180] {'os': 'Linux-5.4.0-1096-gcp-x86_64-with-Ubuntu-18.04-bionic', 'python': '3.6.9', 'heartbeatAt': '2022-12-12T05:57:36.158963', 'startedAt': '2022-12-12T05:57:35.623171', 'docker': None, 'cuda': '11.0.228', 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/Qulxis/StyleTransfer_SpeechGen.git', 'commit': 'beb288cc5a53aaaed8af51902cda19d30e17f562'}, 'email': 'ahx2001@columbia.edu', 'root': '/home/ecbm4040/StyleTransfer_SpeechGen', 'host': 'nlp2', 'username': 'ecbm4040', 'executable': '/home/ecbm4040/envTF24/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2000.2080000000003, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2000.208, 'min': 0.0, 'max': 0.0}, {'current': 2000.208, 'min': 0.0, 'max': 0.0}, {'current': 2000.208, 'min': 0.0, 'max': 0.0}, {'current': 2000.208, 'min': 0.0, 'max': 0.0}, {'current': 2000.208, 'min': 0.0, 'max': 0.0}, {'current': 2000.208, 'min': 0.0, 'max': 0.0}, {'current': 2000.208, 'min': 0.0, 'max': 0.0}, {'current': 2000.208, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 96.73210144042969, 'used': 22.751907348632812}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 15843721216}], 'memory': {'total': 29.387710571289062}}
+2022-12-12 05:57:36,223 INFO    HandlerThread:3838 [system_monitor.py:probe():181] Finished collecting system info
+2022-12-12 05:57:36,223 INFO    HandlerThread:3838 [system_monitor.py:probe():184] Publishing system info
+2022-12-12 05:57:36,223 DEBUG   HandlerThread:3838 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-12-12 05:57:36,224 DEBUG   HandlerThread:3838 [system_info.py:_save_pip():67] Saving pip packages done
+2022-12-12 05:57:36,225 INFO    HandlerThread:3838 [system_monitor.py:probe():186] Finished publishing system info
+2022-12-12 05:57:36,298 DEBUG   SenderThread:3838 [sender.py:send():303] send: files
+2022-12-12 05:57:36,298 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-12-12 05:57:36,378 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:57:36,382 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:57:36,414 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: pause
+2022-12-12 05:57:36,414 INFO    HandlerThread:3838 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-12-12 05:57:36,414 INFO    HandlerThread:3838 [system_monitor.py:finish():160] Stopping system monitor
+2022-12-12 05:57:36,434 DEBUG   SystemMonitor:3838 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-12-12 05:57:36,434 DEBUG   SystemMonitor:3838 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-12-12 05:57:36,434 DEBUG   SystemMonitor:3838 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-12-12 05:57:36,435 INFO    HandlerThread:3838 [interfaces.py:finish():175] Joined cpu
+2022-12-12 05:57:36,435 INFO    HandlerThread:3838 [interfaces.py:finish():175] Joined disk
+2022-12-12 05:57:36,509 DEBUG   SenderThread:3838 [sender.py:send():303] send: telemetry
+2022-12-12 05:57:36,582 INFO    HandlerThread:3838 [interfaces.py:finish():175] Joined gpu
+2022-12-12 05:57:36,582 INFO    HandlerThread:3838 [interfaces.py:finish():175] Joined memory
+2022-12-12 05:57:36,582 INFO    HandlerThread:3838 [interfaces.py:finish():175] Joined network
+2022-12-12 05:57:36,582 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: resume
+2022-12-12 05:57:36,583 INFO    HandlerThread:3838 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-12-12 05:57:36,590 DEBUG   SenderThread:3838 [sender.py:send():303] send: stats
+2022-12-12 05:57:36,590 DEBUG   SenderThread:3838 [sender.py:send():303] send: telemetry
+2022-12-12 05:57:36,590 DEBUG   SenderThread:3838 [sender.py:send():303] send: run
+2022-12-12 05:57:36,700 INFO    SenderThread:3838 [sender.py:send_run():812] updated run: szetm53d
+2022-12-12 05:57:36,776 INFO    Thread-16 :3838 [upload_job.py:push():143] Uploaded file /tmp/tmpwdp1o8lnwandb/2m7mmz9j-wandb-metadata.json
+2022-12-12 05:57:37,013 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/config.yaml
+2022-12-12 05:57:37,013 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-metadata.json
+2022-12-12 05:57:37,013 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/output.log
+2022-12-12 05:57:37,014 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:57:37,014 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/requirements.txt
+2022-12-12 05:57:39,012 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/output.log
+2022-12-12 05:57:43,674 DEBUG   SenderThread:3838 [sender.py:send():303] send: run
+2022-12-12 05:57:43,691 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: pause
+2022-12-12 05:57:43,691 INFO    HandlerThread:3838 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-12-12 05:57:43,733 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: resume
+2022-12-12 05:57:43,733 INFO    HandlerThread:3838 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-12-12 05:57:43,789 INFO    SenderThread:3838 [sender.py:send_run():812] updated run: szetm53d
+2022-12-12 05:57:43,789 DEBUG   SenderThread:3838 [sender.py:send():303] send: telemetry
+2022-12-12 05:57:44,014 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/config.yaml
+2022-12-12 05:57:44,048 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: pause
+2022-12-12 05:57:44,048 INFO    HandlerThread:3838 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-12-12 05:57:44,056 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: resume
+2022-12-12 05:57:44,056 INFO    HandlerThread:3838 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-12-12 05:57:45,014 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/output.log
+2022-12-12 05:57:46,015 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/output.log
+2022-12-12 05:57:51,485 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: pause
+2022-12-12 05:57:51,485 INFO    HandlerThread:3838 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-12-12 05:57:51,494 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: resume
+2022-12-12 05:57:51,495 INFO    HandlerThread:3838 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-12-12 05:57:51,527 DEBUG   SenderThread:3838 [sender.py:send():303] send: config
+2022-12-12 05:57:51,567 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:57:51,568 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:57:51,568 DEBUG   SenderThread:3838 [sender.py:send():303] send: telemetry
+2022-12-12 05:57:51,568 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:57:51,652 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:57:51,652 WARNING SenderThread:3838 [sender.py:send_metric():1127] Seen metric with glob (shouldn't happen)
+2022-12-12 05:57:51,652 DEBUG   SenderThread:3838 [sender.py:send():303] send: telemetry
+2022-12-12 05:57:53,018 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/output.log
+2022-12-12 05:57:55,666 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:57:55,667 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:57:55,668 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:57:55,668 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:57:55,668 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:57:55,668 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:57:55,671 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:57:56,019 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:57:59,788 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:57:59,789 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:57:59,789 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:57:59,792 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:00,021 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:03,912 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:03,913 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:03,913 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:03,916 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:04,023 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:06,656 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:58:06,656 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:58:07,026 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/config.yaml
+2022-12-12 05:58:08,023 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:08,024 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:08,024 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:08,024 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:08,026 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:12,147 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:12,147 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:12,148 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:12,150 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:13,030 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:16,269 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:16,270 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:16,270 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:16,272 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:17,032 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:20,395 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:20,395 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:20,396 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:20,396 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:21,034 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:21,728 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:58:21,728 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:58:24,526 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:24,527 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:24,527 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:24,530 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:25,036 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:28,653 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:28,653 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:28,654 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:28,657 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:29,038 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:32,790 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:32,791 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:32,791 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:32,791 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:33,040 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:36,809 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:58:36,810 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:58:36,926 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:36,927 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:36,927 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:36,927 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:37,042 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:41,063 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:41,063 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:41,064 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:41,064 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:42,044 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:45,204 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:45,205 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:45,205 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:45,208 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:46,046 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:49,348 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:49,349 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:49,349 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:49,350 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:50,048 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:51,887 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:58:51,888 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:58:53,489 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:53,490 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:53,491 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:53,491 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:54,049 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:58:57,631 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:58:57,632 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:58:57,632 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:58:57,635 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:58:58,051 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:01,765 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:01,766 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:01,767 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:01,767 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:02,053 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:05,909 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:05,910 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:05,911 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:05,911 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:06,055 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:06,969 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:59:06,969 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:59:10,043 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:10,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:10,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:10,044 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:10,057 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:13,706 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,719 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,735 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,749 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,767 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,780 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,793 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,804 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,817 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,829 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,855 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,868 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,880 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,892 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,906 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,919 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,937 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,951 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,963 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,975 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,987 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:13,999 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,025 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,039 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,051 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,065 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,079 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,092 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,110 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,124 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,136 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,148 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,160 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,172 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,198 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,212 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,224 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,235 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,249 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,263 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,285 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,298 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,310 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,322 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,335 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,347 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,372 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,386 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,398 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,410 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,424 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,437 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,455 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,469 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,481 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,493 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,505 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,517 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,548 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,561 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,573 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,585 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,599 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,612 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,630 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,646 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,658 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,670 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,682 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,694 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,720 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,733 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,745 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,757 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,771 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,784 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,802 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,816 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,828 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,840 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,852 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,864 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,890 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,904 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,916 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,928 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,941 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,955 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,972 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,986 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:14,998 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,010 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,022 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,035 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,060 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,074 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,086 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,098 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,112 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,126 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,144 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,157 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,169 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,181 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,193 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,205 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,231 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,245 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,257 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,269 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,283 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,297 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,315 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,329 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,341 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,353 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,365 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,377 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,403 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,416 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,429 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,440 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,454 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,468 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,486 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,500 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,512 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,524 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,537 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,549 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,575 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,588 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,600 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,612 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,626 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,639 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,657 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,671 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,683 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,695 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,707 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,719 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,745 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,758 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,771 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,782 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,795 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:15,892 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:16,005 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:16,041 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,041 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,041 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,041 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,041 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,041 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,041 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,042 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,043 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,043 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,043 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,043 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,043 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,043 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,043 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,043 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,043 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,044 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,045 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,045 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,045 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,045 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,046 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,047 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,048 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,049 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,050 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,051 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,052 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,053 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,053 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,053 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,053 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,053 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,053 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,053 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,053 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,072 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,072 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,077 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,077 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,077 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,077 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,077 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,078 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,078 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,078 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,078 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,078 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,078 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,078 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,078 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,092 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,092 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,098 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,098 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,103 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,103 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,108 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,108 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,108 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,108 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,108 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,108 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,109 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,110 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,111 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,112 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,113 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,114 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,115 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,116 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,117 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,118 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,118 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,118 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,118 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,118 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,118 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,122 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,122 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,122 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,122 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,123 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,124 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,125 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,126 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,126 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,126 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,126 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,126 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,126 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,126 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,126 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,126 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,127 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,128 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,129 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,130 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,130 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,130 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,130 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,130 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,130 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,130 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,131 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,132 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,133 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,134 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,135 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,136 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,137 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,138 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,138 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 05:59:16,138 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:16,178 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:16,203 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:17,131 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:20,148 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:20,154 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:20,174 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:20,211 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:21,133 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:22,049 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:59:22,050 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:59:24,286 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:24,304 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:24,305 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:24,335 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:25,134 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:28,420 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:28,439 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:28,444 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:28,470 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:29,136 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:32,551 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:32,576 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:32,576 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:32,631 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:33,138 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:36,680 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:36,699 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:36,703 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:36,743 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:37,129 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:59:37,129 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:59:37,140 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:38,140 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/config.yaml
+2022-12-12 05:59:40,794 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:40,802 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:40,818 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:40,849 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:41,142 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:44,926 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:44,943 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:44,952 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:44,981 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:45,143 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:49,047 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:49,053 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:49,082 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:49,121 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:49,145 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:52,213 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 05:59:52,214 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 05:59:53,179 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:53,185 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:53,203 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:53,240 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:54,147 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 05:59:57,305 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 05:59:57,311 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 05:59:57,335 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 05:59:57,365 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 05:59:58,149 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:01,428 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 06:00:01,452 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 06:00:01,469 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:01,497 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:02,151 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:05,572 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 06:00:05,583 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 06:00:05,597 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:05,632 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:06,153 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:07,295 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 06:00:07,295 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 06:00:09,702 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 06:00:09,719 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 06:00:09,735 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:09,772 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:10,155 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:13,837 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 06:00:13,853 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 06:00:13,861 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:13,891 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:14,156 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:17,965 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 06:00:17,980 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 06:00:17,990 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:18,022 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:18,158 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:22,090 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 06:00:22,096 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 06:00:22,119 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:22,148 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:22,162 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:22,370 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-12 06:00:22,371 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: stop_status
+2022-12-12 06:00:26,224 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 06:00:26,248 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 06:00:26,251 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:26,276 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:27,165 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:30,365 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 06:00:30,387 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 06:00:30,390 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:30,423 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:31,167 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:32,855 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: partial_history
+2022-12-12 06:00:32,867 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 06:00:32,868 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 06:00:32,868 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 06:00:32,868 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 06:00:32,868 DEBUG   SenderThread:3838 [sender.py:send():303] send: metric
+2022-12-12 06:00:32,868 DEBUG   SenderThread:3838 [sender.py:send():303] send: history
+2022-12-12 06:00:32,879 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:32,911 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:32,911 DEBUG   SenderThread:3838 [sender.py:send():303] send: telemetry
+2022-12-12 06:00:32,911 DEBUG   SenderThread:3838 [sender.py:send():303] send: exit
+2022-12-12 06:00:32,911 INFO    SenderThread:3838 [sender.py:send_exit():442] handling exit code: 0
+2022-12-12 06:00:32,912 INFO    SenderThread:3838 [sender.py:send_exit():444] handling runtime: 176
+2022-12-12 06:00:32,932 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:32,932 INFO    SenderThread:3838 [sender.py:send_exit():450] send defer
+2022-12-12 06:00:32,933 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:32,933 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 0
+2022-12-12 06:00:32,933 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:32,933 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-12-12 06:00:32,933 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 1
+2022-12-12 06:00:32,933 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:32,933 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 1
+2022-12-12 06:00:32,933 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:32,934 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-12-12 06:00:32,934 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 2
+2022-12-12 06:00:32,934 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:32,934 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 2
+2022-12-12 06:00:32,934 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:32,934 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-12-12 06:00:32,934 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 3
+2022-12-12 06:00:32,934 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:32,934 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 3
+2022-12-12 06:00:32,935 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:32,935 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-12-12 06:00:32,935 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 4
+2022-12-12 06:00:32,935 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:32,935 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 4
+2022-12-12 06:00:32,958 DEBUG   SenderThread:3838 [sender.py:send():303] send: summary
+2022-12-12 06:00:32,986 INFO    SenderThread:3838 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-12 06:00:32,987 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:32,987 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-12-12 06:00:32,987 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 5
+2022-12-12 06:00:32,987 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:32,987 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 5
+2022-12-12 06:00:32,987 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:32,987 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-12-12 06:00:33,168 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:33,461 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 6
+2022-12-12 06:00:33,461 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:33,461 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 6
+2022-12-12 06:00:33,466 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:33,466 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-12-12 06:00:33,851 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-12 06:00:34,169 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/config.yaml
+2022-12-12 06:00:35,170 INFO    Thread-13 :3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/output.log
+2022-12-12 06:00:35,853 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 7
+2022-12-12 06:00:35,853 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: poll_exit
+2022-12-12 06:00:35,854 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:35,854 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 7
+2022-12-12 06:00:35,854 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:35,855 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-12-12 06:00:35,855 INFO    SenderThread:3838 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-12-12 06:00:36,171 INFO    SenderThread:3838 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/output.log
+2022-12-12 06:00:36,171 INFO    SenderThread:3838 [dir_watcher.py:finish():392] scan: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files
+2022-12-12 06:00:36,171 INFO    SenderThread:3838 [dir_watcher.py:finish():406] scan save: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/config.yaml config.yaml
+2022-12-12 06:00:36,172 INFO    SenderThread:3838 [dir_watcher.py:finish():406] scan save: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json wandb-summary.json
+2022-12-12 06:00:36,176 INFO    SenderThread:3838 [dir_watcher.py:finish():406] scan save: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-metadata.json wandb-metadata.json
+2022-12-12 06:00:36,181 INFO    SenderThread:3838 [dir_watcher.py:finish():406] scan save: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/requirements.txt requirements.txt
+2022-12-12 06:00:36,181 INFO    SenderThread:3838 [dir_watcher.py:finish():406] scan save: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/output.log output.log
+2022-12-12 06:00:36,181 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 8
+2022-12-12 06:00:36,214 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:36,214 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 8
+2022-12-12 06:00:36,218 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:36,218 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-12-12 06:00:36,218 INFO    SenderThread:3838 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-12 06:00:36,622 INFO    Thread-18 :3838 [upload_job.py:push():143] Uploaded file /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/wandb-summary.json
+2022-12-12 06:00:36,680 INFO    Thread-20 :3838 [upload_job.py:push():143] Uploaded file /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/output.log
+2022-12-12 06:00:36,686 INFO    Thread-17 :3838 [upload_job.py:push():143] Uploaded file /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/config.yaml
+2022-12-12 06:00:36,696 INFO    Thread-19 :3838 [upload_job.py:push():143] Uploaded file /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/files/requirements.txt
+2022-12-12 06:00:36,896 INFO    Thread-12 :3838 [sender.py:transition_state():463] send defer: 9
+2022-12-12 06:00:36,897 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:36,897 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 9
+2022-12-12 06:00:36,897 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:36,897 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-12-12 06:00:36,897 INFO    SenderThread:3838 [file_pusher.py:join():173] waiting for file pusher
+2022-12-12 06:00:36,897 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 10
+2022-12-12 06:00:36,898 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:36,898 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 10
+2022-12-12 06:00:36,898 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:36,898 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-12-12 06:00:37,463 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 11
+2022-12-12 06:00:37,464 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:37,464 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 11
+2022-12-12 06:00:37,464 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:37,464 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-12-12 06:00:37,465 INFO    SenderThread:3838 [sender.py:transition_state():463] send defer: 12
+2022-12-12 06:00:37,465 DEBUG   SenderThread:3838 [sender.py:send():303] send: final
+2022-12-12 06:00:37,465 DEBUG   SenderThread:3838 [sender.py:send():303] send: footer
+2022-12-12 06:00:37,465 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: defer
+2022-12-12 06:00:37,465 INFO    HandlerThread:3838 [handler.py:handle_request_defer():162] handle defer: 12
+2022-12-12 06:00:37,466 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: defer
+2022-12-12 06:00:37,466 INFO    SenderThread:3838 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-12-12 06:00:37,467 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-12 06:00:37,467 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: poll_exit
+2022-12-12 06:00:37,468 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: server_info
+2022-12-12 06:00:37,468 DEBUG   SenderThread:3838 [sender.py:send_request():317] send_request: server_info
+2022-12-12 06:00:37,468 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: get_summary
+2022-12-12 06:00:37,496 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: sampled_history
+2022-12-12 06:00:37,630 DEBUG   HandlerThread:3838 [handler.py:handle_request():139] handle_request: shutdown
+2022-12-12 06:00:37,630 INFO    HandlerThread:3838 [handler.py:finish():814] shutting down handler
+2022-12-12 06:00:38,465 INFO    WriterThread:3838 [datastore.py:close():279] close: /home/ecbm4040/StyleTransfer_SpeechGen/Experimentation/wandb/run-20221212_055735-szetm53d/run-szetm53d.wandb
+2022-12-12 06:00:38,629 INFO    SenderThread:3838 [sender.py:finish():1331] shutting down sender
+2022-12-12 06:00:38,629 INFO    SenderThread:3838 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-12 06:00:38,629 INFO    SenderThread:3838 [file_pusher.py:join():173] waiting for file pusher
+2022-12-12 06:05:23,978 INFO    MainThread:3838 [internal.py:handle_exit():77] Internal process exited

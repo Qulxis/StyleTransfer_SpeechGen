@@ -1,0 +1,318 @@
+[W 05:05:24.702 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 05:05:24.705 NotebookApp] Serving notebooks from local directory: /home/ecbm4040/StyleTransfer_SpeechGen
+[I 05:05:24.705 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 05:05:24.705 NotebookApp] http://nlp2:9999/
+[I 05:05:24.705 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 05:05:29.930 NotebookApp] 404 GET /api/contents/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb?content=0&_=1670820910819 (47.230.67.132): No such file or directory: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[W 05:05:29.931 NotebookApp] No such file or directory: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[W 05:05:29.931 NotebookApp] 404 GET /api/contents/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb?content=0&_=1670820910819 (47.230.67.132) 1.920000ms referer=http://34.125.88.57:9999/notebooks/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[I 05:05:30.174 NotebookApp] Uploading file to /StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[E 05:05:30.184 NotebookApp] Error while saving file: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb [Errno 2] No such file or directory: '/home/ecbm4040/StyleTransfer_SpeechGen/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb'
+    Traceback (most recent call last):
+      File "/home/ecbm4040/envTF24/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 477, in save
+        self._save_notebook(os_path, nb)
+      File "/home/ecbm4040/envTF24/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 290, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/home/ecbm4040/envTF24/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 210, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/home/ecbm4040/envTF24/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 105, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/ecbm4040/StyleTransfer_SpeechGen/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb'
+[W 05:05:30.187 NotebookApp] 500 PUT /api/contents/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb (47.230.67.132): Unexpected error while saving file: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb [Errno 2] No such file or directory: '/home/ecbm4040/StyleTransfer_SpeechGen/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb'
+[W 05:05:30.188 NotebookApp] Unexpected error while saving file: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb [Errno 2] No such file or directory: '/home/ecbm4040/StyleTransfer_SpeechGen/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb'
+[E 05:05:30.188 NotebookApp] {
+      "Host": "34.125.88.57:9999",
+      "Connection": "keep-alive",
+      "Content-Length": "35050",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|07f4e290|31578676c1f7f96ce9e53ec5070918ae|1670726469",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+      "Content-Type": "application/json",
+      "Origin": "http://34.125.88.57:9999",
+      "Referer": "http://34.125.88.57:9999/notebooks/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Cookie": "_xsrf=2|07f4e290|31578676c1f7f96ce9e53ec5070918ae|1670726469; username-34-125-88-57-9999=\"2|1:0|10:1670726480|26:username-34-125-88-57-9999|44:ZjlhNmRmZmYwZTcwNDgyNzk3OTJlNGQ4YTQzYzUxMDQ=|b88a4ab72dd284dd30d75c7a883530b7fdcb6ed9ab6cd4955b0681b10c5ac59a\""
+    }
+[E 05:05:30.188 NotebookApp] 500 PUT /api/contents/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb (47.230.67.132) 132.460000ms referer=http://34.125.88.57:9999/notebooks/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[W 05:05:37.416 NotebookApp] 404 GET /api/kernels/a9702bc2-e8d6-4164-a1cb-59e628a13876/channels?session_id=f6562a56a0304e648db90c97206c1982 (47.230.67.132): Kernel does not exist: a9702bc2-e8d6-4164-a1cb-59e628a13876
+[W 05:05:37.456 NotebookApp] 404 GET /api/kernels/a9702bc2-e8d6-4164-a1cb-59e628a13876/channels?session_id=f6562a56a0304e648db90c97206c1982 (47.230.67.132) 42.010000ms referer=None
+[W 05:05:39.165 NotebookApp] Replacing stale connection: a9702bc2-e8d6-4164-a1cb-59e628a13876:f6562a56a0304e648db90c97206c1982
+[W 05:06:01.799 NotebookApp] 404 GET /notebooks/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb (47.230.67.132): No such file or directory: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[W 05:06:01.800 NotebookApp] 404 GET /notebooks/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb (47.230.67.132) 2.420000ms referer=http://34.125.88.57:9999/tree/StyleTransfer_SpeechGen/Experimentation
+[W 05:06:01.889 NotebookApp] 404 GET /api/contents/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb?content=0&_=1670820910820 (47.230.67.132): No such file or directory: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[W 05:06:01.889 NotebookApp] No such file or directory: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[W 05:06:01.889 NotebookApp] 404 GET /api/contents/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb?content=0&_=1670820910820 (47.230.67.132) 1.130000ms referer=http://34.125.88.57:9999/notebooks/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[I 05:06:02.290 NotebookApp] Uploading file to /StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[E 05:06:02.299 NotebookApp] Error while saving file: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb [Errno 2] No such file or directory: '/home/ecbm4040/StyleTransfer_SpeechGen/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb'
+    Traceback (most recent call last):
+      File "/home/ecbm4040/envTF24/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 477, in save
+        self._save_notebook(os_path, nb)
+      File "/home/ecbm4040/envTF24/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 290, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/home/ecbm4040/envTF24/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 210, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/home/ecbm4040/envTF24/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 105, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/ecbm4040/StyleTransfer_SpeechGen/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb'
+[W 05:06:02.299 NotebookApp] 500 PUT /api/contents/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb (47.230.67.132): Unexpected error while saving file: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb [Errno 2] No such file or directory: '/home/ecbm4040/StyleTransfer_SpeechGen/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb'
+[W 05:06:02.300 NotebookApp] Unexpected error while saving file: StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb [Errno 2] No such file or directory: '/home/ecbm4040/StyleTransfer_SpeechGen/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb'
+[E 05:06:02.300 NotebookApp] {
+      "Host": "34.125.88.57:9999",
+      "Connection": "keep-alive",
+      "Content-Length": "35050",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|07f4e290|31578676c1f7f96ce9e53ec5070918ae|1670726469",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+      "Content-Type": "application/json",
+      "Origin": "http://34.125.88.57:9999",
+      "Referer": "http://34.125.88.57:9999/notebooks/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Cookie": "_xsrf=2|07f4e290|31578676c1f7f96ce9e53ec5070918ae|1670726469; username-34-125-88-57-9999=\"2|1:0|10:1670726480|26:username-34-125-88-57-9999|44:ZjlhNmRmZmYwZTcwNDgyNzk3OTJlNGQ4YTQzYzUxMDQ=|b88a4ab72dd284dd30d75c7a883530b7fdcb6ed9ab6cd4955b0681b10c5ac59a\""
+    }
+[E 05:06:02.300 NotebookApp] 500 PUT /api/contents/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb (47.230.67.132) 275.480000ms referer=http://34.125.88.57:9999/notebooks/StyleTransfer_SpeechGen/Experimentation/GTP2_model.ipynb
+[W 05:06:03.869 NotebookApp] 404 GET /api/contents/StyleTransfer_SpeechGen/Experimentation/data?type=directory&_=1670820899072 (47.230.67.132): No such file or directory: StyleTransfer_SpeechGen/Experimentation/data
+[W 05:06:03.870 NotebookApp] No such file or directory: StyleTransfer_SpeechGen/Experimentation/data
+[W 05:06:03.870 NotebookApp] 404 GET /api/contents/StyleTransfer_SpeechGen/Experimentation/data?type=directory&_=1670820899072 (47.230.67.132) 1.180000ms referer=http://34.125.88.57:9999/tree/StyleTransfer_SpeechGen/Experimentation/data
+[W 05:06:20.724 NotebookApp] 404 GET /api/contents/StyleTransfer_SpeechGen/Experimentation/data?type=directory&_=1670820899075 (47.230.67.132): No such file or directory: StyleTransfer_SpeechGen/Experimentation/data
+[W 05:06:20.724 NotebookApp] No such file or directory: StyleTransfer_SpeechGen/Experimentation/data
+[W 05:06:20.725 NotebookApp] 404 GET /api/contents/StyleTransfer_SpeechGen/Experimentation/data?type=directory&_=1670820899075 (47.230.67.132) 1.150000ms referer=http://34.125.88.57:9999/tree/StyleTransfer_SpeechGen/Experimentation/data
+[I 05:06:24.025 NotebookApp] 302 GET / (47.230.67.132) 0.590000ms
+/usr/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+/usr/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 05:06:35.984 NotebookApp] Kernel started: a151eaf0-97e9-4f95-9ad8-f028256a83fb, name: python3
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7f7da82c5978>()
+handle: <Handle <TaskStepMethWrapper object at 0x7f7da82c5978>()>
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+2022-12-12 05:07:07.093078: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 05:08:36.227 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:10:37.468 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:12:36.363 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:14:36.103 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:16:36.096 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:18:36.099 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:20:36.099 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:22:36.081 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:24:36.062 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:26:36.083 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:28:36.071 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:30:36.073 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:32:36.066 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 05:34:36.071 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:36:36.065 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:37:26.016 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 05:37:40.760 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 05:37:40.761 NotebookApp] Replaying 18 buffered messages
+[I 05:38:36.165 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:40:36.074 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:42:36.053 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 05:44:36.034 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:46:36.042 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:48:36.792 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:50:36.774 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:52:36.041 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:54:36.034 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 05:56:36.769 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 05:56:58.072 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 05:57:00.097 NotebookApp] Kernel restarted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+[I 05:57:00.297 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 05:57:00.812 NotebookApp] Replaying 3 buffered messages
+2022-12-12 05:57:31.470770: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 05:58:36.786 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:00:36.052 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:00:36.550 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:01:25.755 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:01:25.760 NotebookApp] Replaying 28 buffered messages
+[I 06:02:36.101 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:04:36.052 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:05:23.871 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:05:25.405 NotebookApp] Kernel restarted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+[I 06:05:25.603 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:05:26.176 NotebookApp] Replaying 3 buffered messages
+2022-12-12 06:05:56.364708: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[I 06:06:36.103 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 06:08:36.026 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:10:36.030 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:12:36.040 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:14:36.014 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:14:58.490 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:18:49.598 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:18:49.598 NotebookApp] Replaying 273 buffered messages
+[I 06:18:50.091 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:21:23.762 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:23:23.741 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:26:35.999 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:28:36.011 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[W 06:28:55.459 NotebookApp] delete /Experimentation/responses/SenSanders_polite_diverse.csv
+[I 06:29:02.686 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:29:04.207 NotebookApp] Kernel restarted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+[I 06:29:04.398 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:29:04.955 NotebookApp] Replaying 3 buffered messages
+2022-12-12 06:29:34.052303: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 06:30:35.978 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:31:17.395 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:31:25.834 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:32:36.928 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:38:16.525 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:45:20.381 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:46:36.075 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:47:40.185 NotebookApp] Kernel interrupted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+[I 06:48:36.788 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 06:49:07.628 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.002 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: Synced summer-brook-30: https://wandb.ai/qulxis/my-awesome-project/runs/2nbr3xwc
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221212_064901-2nbr3xwc/logs
+[I 06:49:10.446 NotebookApp] Kernel restarted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+[I 06:49:10.650 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:49:11.192 NotebookApp] Replaying 3 buffered messages
+2022-12-12 06:49:13.486054: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 06:50:35.980 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:50:46.025 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)[I 06:50:48.848 NotebookApp] Kernel restarted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+[I 06:50:49.050 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+wandb: \ 0.002 MB of 0.010 MB uploaded (0.000 MB deduped)wandb: Synced lemon-frost-31: https://wandb.ai/qulxis/my-awesome-project/runs/2n7y084w
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221212_064917-2n7y084w/logs
+[I 06:50:49.557 NotebookApp] Replaying 3 buffered messages
+2022-12-12 06:50:51.770882: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 06:52:03.857 NotebookApp] Kernel interrupted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+[I 06:52:07.662 NotebookApp] Kernel interrupted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+[I 06:52:10.438 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.002 MB of 0.002 MB uploaded (0.000 MB deduped)wandb: \ 0.016 MB of 0.016 MB uploaded (0.000 MB deduped)[I 06:52:13.255 NotebookApp] Kernel restarted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+wandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▁▅▅▅▅▅█
+wandb:   train/global_step ▁▂▃▄▅▆▇█
+wandb: train/learning_rate ██▇▆▅▄▃▁
+wandb:          train/loss █▅▅▃▄▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:         train/epoch 0.02
+wandb:   train/global_step 40
+wandb: train/learning_rate 0.00014
+wandb:          train/loss 2.9179
+wandb: 
+wandb: Synced graceful-capybara-32: https://wandb.ai/qulxis/my-awesome-project/runs/35ml52pd
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221212_065055-35ml52pd/logs
+[I 06:52:13.445 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 06:52:13.982 NotebookApp] Replaying 3 buffered messages
+2022-12-12 06:52:18.241151: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[I 06:52:36.692 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 06:54:36.694 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:56:36.686 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 06:58:36.725 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:00:36.681 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:01:41.827 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+wandb: Waiting for W&B process to finish... (success).
+[I 07:01:44.653 NotebookApp] Kernel restarted: a151eaf0-97e9-4f95-9ad8-f028256a83fb
+[I 07:01:44.855 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 07:01:45.454 NotebookApp] Replaying 15 buffered messages
+wandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   train/global_step ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb: train/learning_rate ███████████▇▇▇▇▇▇▇▆▆▆▆▆▅▅▅▅▅▄▄▄▃▃▃▃▂▂▂▁▁
+wandb:          train/loss █▅▆▅▄▄▄▄▃▃▄▃▃▃▃▃▃▃▂▂▂▃▂▂▂▂▂▂▂▂▂▂▃▂▂▁▂▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:         train/epoch 0.27
+wandb:   train/global_step 625
+wandb: train/learning_rate 0.00011
+wandb:          train/loss 2.3417
+wandb: 
+wandb: Synced generous-hill-33: https://wandb.ai/qulxis/my-awesome-project/runs/xy3f0muj
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221212_065222-xy3f0muj/logs
+2022-12-12 07:02:32.730923: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+[I 07:02:35.948 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 07:04:36.777 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:06:36.696 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:08:36.692 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:11:23.701 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:12:16.681 NotebookApp] Starting buffering for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 07:13:11.060 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:13:12.672 NotebookApp] Restoring connection for a151eaf0-97e9-4f95-9ad8-f028256a83fb:ef04b4ee877a4f5388f0ded932f0b756
+[I 07:20:36.129 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:22:35.945 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:24:36.678 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
+[I 07:27:59.845 NotebookApp] Saving file at /Experimentation/GTP2_model.ipynb
