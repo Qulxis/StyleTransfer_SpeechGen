@@ -60,6 +60,108 @@ https://arxiv.org/pdf/1703.10960.pdf Section 3.1
 
 
 # Source DOCS:
-EARLY STOPPING: https://stackoverflow.com/questions/69087044/early-stopping-in-bert-trainer-instances
+Doesn't work :EARLY STOPPING: https://stackoverflow.com/questions/69087044/early-stopping-in-bert-trainer-instances
+
+# Personalization
+#### Other
+https://aclanthology.org/2020.acl-main.700.pdf
+"With the rising popularity of search engines in 1990s, the need for personalization in the interpretation of the query becomes obvious "http://www2.hawaii.edu/~donnab/lis610/TDWilson_Only_1999.pdf
+
+#### Stanford Politeness Paper: https://nlp.stanford.edu/pubs/politeness.pdf
+Theories of Politeness: https://files.eric.ed.gov/fulltext/EJ1126942.pdf
+ Kaplan (1999) observes that “people desire to be paid respect” and politess is a the coin in communication. 
+
+"...and are often decisive factor in whether those interactions go well or poorly"(Gyasi Obeng, 1997; Chilton, 1990; Andersson and Pearson, 1999; Rogers and LeeWong, 2003; Holmes and Stubbe, 2005).
+
+"We show that polite Wikipedia editors are more likely to achieve high status through elections; however,
+once elected, they become less polite. Similarly,on Stack Exchange, we find that users at the top of the reputation scale are less polite than those at the bottom"
+
+Answers to online questions are often less polite than the questions themselves. However, high reputation users on stack exchange are less polite.
+
+This paper's methods are distint to its domains and the author differentiate that in their papers:
+"However,
+this research focusses on domain-specific textual
+cues, whereas the present work seeks to leverage domain-independent politeness cues, building on the literature on how politeness affects
+worksplace social dynamics and power structures
+"
+
+#### Why we need this work:
+(cite https://aclanthology.org/2020.acl-main.700.pdf)
+
+" personalization includes also an intrauser
+modeling of different individual contexts based on
+user’s communication goals."
+
+"empirical orstatistical NLP area (Manning et al., 1999; Brill and
+Mooney, 1997), the focus on frequently appearing
+phenomena in large textual data sets unavoidably
+led to NLP tools supporting “standard English” for
+generic needs of an anonymous user."
+
+"
+science argument that an identity is the product
+rather than the source of linguistic and other semiotic practices, and identities are relationally constructed through several, often overlapping, aspects
+of the relationship between self and other, including similarity/difference, genuineness/artifice and
+authority/delegitimacy (Bucholtz and Hall, 2005 https://bucholtz.linguistics.ucsb.edu/sites/secure.lsit.ucsb.edu.ling.d7_b/files/sitefiles/research/publications/BucholtzHall2005-DiscourseStudies.pdf)
 
 
+What to do about bad language on the internet: https://aclanthology.org/N13-1037/
+
+Word choices are often demographic and associate with different demographich group. General politeness labeling biases towards the group that it was trained on. Issues
+"many of the features
+that characterize bad language have strong associations with specific social variables. In some cases,
+these associations mirror linguistic variables known
+from speech — such as geographically-associated
+lexical items like hella, or transcriptions of phonological variables like “g-dropping” (Eisenstein et al.,
+2010). But in other cases, apparently new lexical
+items, such as the abbreviations ctfu, lls, and af,
+acquire surprisingly strong associations with geographical areas and demographic groups (Eisenstein
+et al., 2011)."
+
+
+It occurs often as a symbol of solidarity and indentity.
+
+"
+The use of non-standard language is often seen
+as a form of identity work, signaling authenticity, solidarity, or resistance to norms imposed from
+above (Bucholtz and Hall, 2005). 
+"
+
+#### Why Twitter:
+What to do about bad language on the internet: https://aclanthology.org/N13-1037/
+"In contrast, Twitter users in the USA contain an equal proportion of men and women, and
+a higher proportion of young adults and minorities
+than in the population as a whole (Smith and Brewer,
+2012). Such demographic differences are very likely
+to lead to differences in language (Green, 2002;
+Labov, 2001; Eckert and McConnell-Ginet, 2003).
+
+
+
+
+
+### Ideas:
+Politeness is like payment and determines how interactions go (Stanford). However, what is polite varies from person to person. It is important to move outside of "General Language" (cite https://aclanthology.org/2020.acl-main.700.pdf). In online elections, there is a clear differentiation between elected admins and their failed counterparts: (Stanford). 
+
+
+
+Joe Rogan: Even the rude versions aren't neccessarily rude, but they differ from generic politeness.
+
+Interesting"
+
+CASE FOR WHY WE NEED TO BE PERSONALIZED: JOE ROGAN IS A GOOD EXAMPLE OF THIS DEMONSTRATED.
+https://aclanthology.org/P15-1073/
+https://aclanthology.org/W17-1606/
+Neglecting the variety of users and use cases doesn’t
+make the tools universally applicable with the same
+performance - it only makes our community blind
+to the built-in bias towards the specifics of user profiles in training data (Hovy, 2015; Tatman, 2017).
+
+As people disagree what is polite in the middle ground, we use the extremes of polite and impolitess scores.
+cite (. As shown in Table 2, full agreement is much more common in the 1st (bottom) and 4th (top) quartiles than in the middle quartiles. Stanford)
+
+Classifier is p good, but partly because humans aren't: human acc is 80.89%- 86.72% and bot is 75.43%-83.79%.
+
+Politeness is a style metric used in style transfer. However, politeness as a metric from a general or "standard english" perspective is ignorant of the diversity of langauge. Transfering politeness first requires us to understand what politeness is and how by using a standard politeness approach, we miss a lot of the neuances of language and culture. 
+
+The approach to style transfer by isolating topics such as politeness and sentiment are dangerous as by generalizing, one only reinforces the biases in the training set. 
