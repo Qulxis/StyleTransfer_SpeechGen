@@ -6,6 +6,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from transformers import GPT2Model, GPT2Config
 import random
+# import keyword_extraction_w_parser
 
 
 
@@ -100,3 +101,49 @@ def gen_input(cool_tweets,EPOCHS):
             all_handle_tweets.extend(current_tweet)
     total_text += '<|endoftext|>'.join(all_handle_tweets) + '<|endoftext|>'
     return total_text
+
+def gen_input_special_tokens(cool_tweets,EPOCHS, special_tokens):
+    """
+    Input: 
+    - cool_tweets: array of tweets that pass
+    - special_tokens: list of special tokens ['<|SenSanders|>','<|polite|>']. 
+    Output:
+    - total_text: a single string of all tweets spaced out by <|endoftext|> markers"
+    """
+    special_token_str = ''
+    for token in special_tokens:
+        special_token_str += token #Should look like <|token1|><|token2|>
+    start_token = '<|endoftext|>' + special_token_str
+    seed_data = random.randint(0,2**32-1)
+    dataRandom = random.Random(seed_data)
+    total_text = '<|endoftext|>'
+    all_handle_tweets = []
+    epoch_len = max(len(''.join(cool_tweet)) for cool_tweet in cool_tweets)
+    for _ in range(EPOCHS):
+        for cool_tweet in cool_tweets:
+            dataRandom.shuffle(cool_tweet) #Removed as random.Random.shuffle was depreciated
+            current_tweet = cool_tweet
+            current_len = len(''.join(current_tweet))
+            while current_len < epoch_len:
+                for t in cool_tweet:
+                    current_tweet.append(t)
+                    current_len += len(t)
+                    if current_len >= epoch_len: break
+            dataRandom.shuffle(current_tweet)
+            all_handle_tweets.extend(current_tweet)
+    total_text += start_token.join(all_handle_tweets) + '<|endoftext|>'
+    return total_text
+
+def addTag(df,tag):
+    """
+    adds a tag (str) to every element in a df's elements
+    """
+    lst_strings = df["Tweets"]
+
+    df_new = pd.DataFrame(columns=["Tweets"])
+    df_new["Tweets"] = [tag+string for string in lst_strings]
+    return df_new
+
+
+
+

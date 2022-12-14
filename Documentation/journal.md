@@ -48,3 +48,18 @@ https://convokit.cornell.edu/documentation/politenessStrategies.html
 https://dl.acm.org/doi/abs/10.1145/3415190
 Politness in style transfer context
 https://www.cs.cornell.edu/~cristian/Politeness_Paraphrasing_files/fine-grained-politeness-paraphrasing.pdf
+
+
+## Other approaches:
+
+CVAEs:
+https://arxiv.org/pdf/1511.06349.pdf
+https://arxiv.org/pdf/1703.10960.pdf Section 3.1
+- Unsure how a CVAE would work? We don't have a "Correct" output.
+- How to condition this during training? CVAE require a context, c, which requires knowing the topic. I don't have the means to label the topics of each tweet so unsure what my context vector would be. I could extract the nouns and their order to form my context, but then I worry that isn't much better than just using a prompt. I could maybe do a train test split though and use the nouns extracted as my context vector in both cases and the "correct output" would just be the original tweet. I think this might just end up being MLM to a certain degree if I force an ordering of the nouns, and if I don't force an order, I might as well just use the LLM with prompt approach as I am doing now? Should talk to TAs and Kathy.
+
+
+# Source DOCS:
+EARLY STOPPING: https://stackoverflow.com/questions/69087044/early-stopping-in-bert-trainer-instances
+
+
