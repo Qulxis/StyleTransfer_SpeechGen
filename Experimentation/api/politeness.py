@@ -17,6 +17,23 @@ from convokit import PolitenessStrategies
 import matplotlib
 import matplotlib.pyplot as plt
 
+#EXTRA for pipreqs to find when generating requirements.txt
+import os
+import numpy as np
+import re
+import pandas as pd
+from bs4 import BeautifulSoup
+from transformers import GPT2Model, GPT2Config
+import random
+#import API
+from api.filter import filter_manual, gen_input, gen_input_special_tokens, addTag
+from api.politeness import generate_politeness, generate_politeness_all
+import pandas as pd
+from api.tfidf_funcs import tfidf, get_Keywords, add_Keywords
+import pandas as pd
+import random
+from sklearn.model_selection import train_test_split
+
 
 
 def generate_politeness(df_in, corpus_train = 'wikipedia', percentage_top_tweets=0.25,polite_or_impolite = 'polite'):
@@ -32,6 +49,8 @@ def generate_politeness(df_in, corpus_train = 'wikipedia', percentage_top_tweets
     returns a pandas df with the top percentage_top_tweets % of polite or impolite tweets
     
     """
+
+
     # Downloading the wikipedia portion of annotated data
     if corpus_train == 'wikipedia': #default
         wiki_corpus = Corpus(download("wikipedia-politeness-corpus")) #other options is stack-exchange-politeness-corpus
@@ -58,6 +77,8 @@ def generate_politeness(df_in, corpus_train = 'wikipedia', percentage_top_tweets
 
     
     parser = TextParser(verbosity=1000)
+
+# START: COPIED FROM <https://github.com/CornellNLP/ConvoKit/blob/master/examples/politeness-strategies/politeness_demo.ipynb >
     #parse train and test. We use wiki_corpus. We can change this by alftering the first line in this function
     wiki_corpus = parser.transform(wiki_corpus)
     test_corp = parser.transform(test_corp)
@@ -96,6 +117,7 @@ def generate_politeness(df_in, corpus_train = 'wikipedia', percentage_top_tweets
     plt.xlabel('Point Dds')
     plt.title('Mapping of point IDs to politeness score')
     plt.plot(x)
+# END: COPIED FROM <https://github.com/CornellNLP/ConvoKit/blob/master/examples/politeness-strategies/politeness_demo.ipynb >
     #XX TESTED 12/10/2022
     if polite_or_impolite == 'polite':
         choices = scores.loc[scores['prediction']==1] #get all points with polite prediction
@@ -181,6 +203,7 @@ def generate_politeness_all(tagname, df_in, corpus_train = 'wikipedia', polite_p
     
     parser = TextParser(verbosity=1000)
     #parse train and test. We use wiki_corpus. We can change this by alftering the first line in this function
+    # START: COPIED FROM <https://github.com/CornellNLP/ConvoKit/blob/master/examples/politeness-strategies/politeness_demo.ipynb >
     wiki_corpus = parser.transform(wiki_corpus)
     test_corp = parser.transform(test_corp)
     ps = PolitenessStrategies()
@@ -218,7 +241,7 @@ def generate_politeness_all(tagname, df_in, corpus_train = 'wikipedia', polite_p
     plt.xlabel('Point Dds')
     plt.title('Mapping of point IDs to politeness score')
     plt.plot(x, label=tagname)
-
+# END: COPIED FROM <https://github.com/CornellNLP/ConvoKit/blob/master/examples/politeness-strategies/politeness_demo.ipynb >
     #XX TESTED 12/10/2022
     df_pos = pd.DataFrame(columns=["Tweets"])
     df_neg = pd.DataFrame(columns=["Tweets"])

@@ -104,6 +104,8 @@ rather than the source of linguistic and other semiotic practices, and identitie
 of the relationship between self and other, including similarity/difference, genuineness/artifice and
 authority/delegitimacy (Bucholtz and Hall, 2005 https://bucholtz.linguistics.ucsb.edu/sites/secure.lsit.ucsb.edu.ling.d7_b/files/sitefiles/research/publications/BucholtzHall2005-DiscourseStudies.pdf)
 
+"politeness is universal as a concept but not as a behaviour"
+
 
 What to do about bad language on the internet: https://aclanthology.org/N13-1037/
 
@@ -137,7 +139,11 @@ to lead to differences in language (Green, 2002;
 Labov, 2001; Eckert and McConnell-Ginet, 2003).
 
 
-
+https://jannisandroutsopoulos.files.wordpress.com/2011/11/language-change-and-digital-media-preprint.pdf
+"Twitter itself is not a unified genre, it is composed of many
+different styles and registers, with widely varying
+expectations for the degree of standardness and dimensions of variation (Androutsopoulos, 2011)
+"
 
 
 ### Ideas:
