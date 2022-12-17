@@ -15,10 +15,11 @@ nltk.download('averaged_perceptron_tagger')
 """
 Source:
 https://www.nltk.org/_modules/nltk/tag/perceptron.html
+https://kavita-ganesan.com/python-keyword-extraction/#.Y50m9HbMI7E <-- mainly this
 
 """
 
-
+# START: COPIED FROM <https://kavita-ganesan.com/python-keyword-extraction/#.Y50m9HbMI7E>
 def pre_process(text):
     """"
     For cleaning data for tfidf
@@ -48,7 +49,6 @@ def extract_topn_from_vector(feature_names, sorted_items, topn=10):
     
     """
     
-    
     #use only topn items from vector
     sorted_items = sorted_items[:topn]
 
@@ -70,12 +70,14 @@ def extract_topn_from_vector(feature_names, sorted_items, topn=10):
     
     return results
 
-
+# END: COPIED FROM <https://kavita-ganesan.com/python-keyword-extraction/#.Y50m9HbMI7E>
 
 def tfidf(df_idf):
     """
-    returns a list of lists: each internal list is the top 2 keywords in
+    Called directly.
+    returns the countvectorized as well as the tfidf_transformer
     """
+    # START: COPIED FROM <https://kavita-ganesan.com/python-keyword-extraction/#.Y50m9HbMI7E>
     from nltk.corpus import stopwords
     nltk.download('stopwords')
     stopwords=stopwords.words('english')
@@ -84,32 +86,33 @@ def tfidf(df_idf):
     #create a vocabulary of words, 
     #ignore words that appear in 85% of documents, 
     #eliminate stop words
-
-    cv=CountVectorizer(max_df=0.85,stop_words=stopwords,max_features=10000)
-
-    word_count_vector=cv.fit_transform(docs)
+    cv=CountVectorizer(max_df=0.85,stop_words=stopwords,max_features=10000) # Vectorize all words in documents
+    word_count_vector=cv.fit_transform(docs) # word counts for vocab in each document matrix
     tfidf_transformer=TfidfTransformer(smooth_idf=True,use_idf=True)
-    tfidf_transformer.fit(word_count_vector)
+    tfidf_transformer.fit(word_count_vector) # essentially gets us the idf 
+    # END: COPIED FROM <https://kavita-ganesan.com/python-keyword-extraction/#.Y50m9HbMI7E>
     return cv, tfidf_transformer
 
 
 def get_Keywords(cv, tfidf_transformer, tweet):
     """
-    cv and tfidf come from tfidf
+    cv and tfidf_transformer come from tfidf function
+    CV = Count Vectorizer
     tweet (string): string to get keywords for
     
     """
-    
+    # START: COPIED FROM <https://kavita-ganesan.com/python-keyword-extraction/#.Y50m9HbMI7E>
     # you only needs to do this once
     feature_names=cv.get_feature_names_out()
     # get the document that we want to extract keywords from
     doc= pre_process(tweet)
     #generate tf-idf for the given document
-    tf_idf_vector=tfidf_transformer.transform(cv.transform([doc]))
+    tf_idf_vector=tfidf_transformer.transform(cv.transform([doc])) #idf on idf
     #sort the tf-idf vectors by descending order of scores
     sorted_items=sort_coo(tf_idf_vector.tocoo())
     #extract only the top n; n here is 10
     keywords=extract_topn_from_vector(feature_names,sorted_items,2)
+    # END: COPIED FROM <https://kavita-ganesan.com/python-keyword-extraction/#.Y50m9HbMI7E>
     out = []
 
     for k in keywords:
@@ -124,7 +127,6 @@ def add_Keywords(df,cv,tfidf_transformer):
     new_tweets = []
     for tweet in df['Tweets'].tolist():
         words = get_Keywords(cv, tfidf_transformer, tweet)
-        
         if not words:
             continue
         if len(words) == 1:
