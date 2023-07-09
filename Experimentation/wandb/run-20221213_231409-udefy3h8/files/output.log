@@ -1,9 +1,0 @@
-
-[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
-c:\Users\andre\AppData\Local\Programs\Python\Python39\lib\site-packages\transformers\data\datasets\language_modeling.py:54: FutureWarning: This dataset will be removed from the library soon, preprocessing should be handled with the 🤗 Datasets library. You can have a look at this example script for pointers: https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py
-  warnings.warn(
-Token indices sequence length is longer than the specified maximum sequence length for this model (2556841 > 1024). Running this sequence through the model will result in indexing errors
-env: WANDB_PROJECT=tweet_analysis
-[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
-['[C1]', '[C2]', '[C3]', '[C4]']
-4
